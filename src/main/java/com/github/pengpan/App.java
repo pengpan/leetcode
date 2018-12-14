@@ -14,5 +14,7 @@ public class App
 
         Solution solution = new Solution();
         // do something
+        String result = solution.reverseWords("the sky is blue");
+        System.out.println(result);
     }
 }
