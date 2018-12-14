@@ -59,9 +59,14 @@ public class Solution {
      * https://leetcode-cn.com/problems/rotate-string/
      */
     public boolean rotateString(String A, String B) {
-        if ("".equals(A) && "".equals(B)) return true;
-        for (int i = 0, length = A.length(); i < length; i++)
-            if (B.equals(A.substring(i + 1).concat(A.substring(0, i + 1)))) return true;
+        if ("".equals(A) && "".equals(B)) {
+            return true;
+        }
+        for (int i = 0, length = A.length(); i < length; i++) {
+            if (B.equals(A.substring(i + 1).concat(A.substring(0, i + 1)))) {
+                return true;
+            }
+        }
         return false;
     }
 
